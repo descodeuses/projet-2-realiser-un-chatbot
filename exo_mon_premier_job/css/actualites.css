@@ -1,0 +1,386 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	color: black;
+	vertical-align: text-bottom;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{
+	height: 100%;
+}
+body {
+	height: 100%;
+	line-height: 1;
+	font-family: "Magra", sans-serif;
+	scroll-behavior: smooth;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}/**************Fin reset*/
+
+.o{
+	background: orange;	
+}
+.g{
+    background: grey;
+}
+h1{
+	font-size: 2em;
+}
+h2{
+	font-size: 1.2em;
+}
+p{
+	font-size: 0.9em;
+}
+/****************************
+ELEMENTS DU HEAD
+****************************/
+
+/********************************* TOP ********************************/
+.top-header{
+    margin-bottom: 40px;
+}
+.logo{
+display: flex;
+position: relative;
+padding: 10px;
+margin-bottom: 40px;
+}
+.logo > div{
+position: absolute;
+bottom :12px;
+left: 120px
+}
+.connexion{
+text-align: center;
+margin-bottom: 20px;
+}
+.connexion p{
+font-size: 0.8em;
+padding: 5px;
+}
+.connexion i{
+font-size: 2.2em;
+}
+/*********************************SEARCHBAR********************************/
+.recherche_p{
+	background-color: aquamarine;
+	padding: 10px;
+	margin-bottom: 100px;
+}
+#searchthis #search {
+	background-color: #f7f7f7;
+	border: none;
+	width: 50%;
+	box-sizing: border-box;
+	height: 25px;
+	font-size: 0.8em;
+}
+#searchthis #search-btn {
+	background-color: #E8B960;
+	border: none;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	vertical-align: top;
+	height: 25px;
+	font-size: 0.8em;
+	letter-spacing: 1px;
+}
+
+
+/*********************************NAVBAR********************************/
+.fixe-header{
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    top:0;
+    left: 0;
+}
+.center-nav{
+    display: flex;
+    justify-content: space-around;
+}
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu #menu-button {
+  display: none;
+}
+#cssmenu {
+  width: auto;
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+}
+.block-cssmenu{
+border-bottom: 3px solid #457BA2;
+    background: #f7f7f7;
+}
+#cssmenu > ul {
+}
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu > ul > li > a {
+  padding: 20px 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: grey;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
+#cssmenu > ul > li > a:hover,
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li.active > a {
+  color: #457BA2;
+}
+#cssmenu #menu-indicator {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  height: 0;
+  width: 0;
+  border: 5px solid transparent;
+  border-bottom-color: #457BA2;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+#cssmenu.small-screen {
+  width: 100%;
+}
+#cssmenu.small-screen > ul,
+#cssmenu.small-screen.align-center > ul {
+  width: 100%;
+  text-align: left;
+}
+#cssmenu.small-screen > ul > li,
+#cssmenu.small-screen.align-center > ul > li {
+  float: none;
+  display: block;
+  border-top: 1px solid rgba(100, 100, 100, 0.1);
+}
+#cssmenu.small-screen > ul > li > a {
+  padding: 18px 25px;
+}
+#cssmenu.small-screen > ul > li:after,
+#cssmenu.small-screen > ul > li:before {
+  display: none;
+}
+#cssmenu.small-screen #menu-button {
+  display: block;
+  padding: 18px 25px;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #457BA2;
+/*  background: url("/SITE/img/bg.png");*/
+}
+#cssmenu.small-screen #menu-button.menu-opened {
+  color: #444444;
+}
+#cssmenu.small-screen #menu-button:after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: 19.5px;
+  display: block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border-top: 2px solid #457BA2;
+  border-bottom: 2px solid #457BA2;
+  width: 18px;
+  height: 3px;
+}
+#cssmenu.small-screen #menu-button.menu-opened:after {
+  border-top: 2px solid #444444;
+  border-bottom: 2px solid #444444;
+}
+#cssmenu.small-screen #menu-button:before {
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: 29.5px;
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: #457BA2;
+}
+#cssmenu.small-screen #menu-button.menu-opened:before {
+  background: #444444;
+}
+#cssmenu.small-screen #menu-indicator {
+  display: none;
+}
+
+/****************************
+ELEMENTS DU BODY
+****************************/
+
+
+/********************************* BLOCK COMMUNAUTE ********************************/
+.block-page{
+margin: 0px 20px;
+}
+.block-element-title{
+margin: 20px
+}
+.block-element{
+	display: inline-flex;
+	width: 450px;
+	height: 300px;
+	margin: 20px;
+}
+.block-element p{
+	margin: 20px;
+	text-align: justify;
+}
+.block-element h3{
+	margin-left: 20px;
+}
+.element1{
+	position: absolute;
+	vertical-align: text-bottom;
+}
+.element1 img{
+	width: 100%;
+	max-width: 450px;
+	height: auto;
+	border-color: red;
+}
+.element2{
+    margin-top: 200px;
+    z-index: 3;
+    background-color: rgba(255,255,255,0.5);
+    height: 100px;
+}
+.hide-element2{
+    display: none;
+}
+.show-element2{
+    display: block;
+}
+.element3{
+	width: 40%;
+	border-left: grey solid 1px;
+}
+.element4{
+	width: 60%;
+}
+
+/****************************
+ELEMENTS DU FOOTER
+****************************/
+.wrapper{
+	min-height: 73%;
+	margin-bottom: -50px;
+}
+
+.footer{
+	display: flex;
+	justify-content: center;
+	background: #f7f7f7;
+	height: 50px;
+}
+.footer p{
+	font-size: 0.7em;
+	margin: 0px 20px;
+	padding-top: 18px;
+}
+.share-icon i{
+	margin-left: 40px;
+	padding-top: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
