@@ -10,7 +10,7 @@
 </ul>
 <p>Dans le cadre de JavaScript :</p>
 <ul>
-  <li>Utilisez comme modèle de base le fichier index.html préalablement intégré pendant la période d’exercice.</li>
+  <li>Utilisez comme modèle de base le fichier index.html préalablement intégré pendant la période d’exercice</li>
   <li>Le point d’entrée des questions se fera via le champ affiché sur la page</li>
   <li>Les échanges devront être affichés directement sur la page</li>
 </ul>
